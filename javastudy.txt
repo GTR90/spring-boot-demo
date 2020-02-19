@@ -4,3 +4,10 @@ java标准库的java.io.File对象表示一个文件或者目录：
 2.可以获取路径／绝对路径／规范路径：getPath()/getAbsolutePath()/getCanonicalPath()；
 3.可以获取目录的文件和子目录：list()/listFiles()；
 4.可以创建或删除文件和目录。
+
+
+Java标准库的java.io.InputStream定义了所有输入流的超类：
+
+FileInputStream实现了文件流输入；
+ByteArrayInputStream在内存中模拟一个字节流输入。
+总是使用try(resource)来保证InputStream正确关闭。
